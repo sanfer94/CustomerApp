@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CustomerListItem from './CustomerListItem';
 
-const CustomersList = ({ customers }) => {
+const CustomersList = ({ customers,urlPath }) => {
     return (
         <div>
             <div className="customers-list">
