@@ -5,13 +5,16 @@ import CustomerListItem from './CustomerListItem';
 const CustomersList = ({ customers,urlPath }) => {
     return (
         <div>
+            
             <div className="customers-list">
                 {
+                    //seguir en 16 17
                     customers.map(c =>
                         <CustomerListItem
                             key={c.dni}
-                            customer={c.name}
-                            editACtion={'Editar'}
+                            dni={c.dni}
+                            name={c.name}
+                            editAction={'Editar'}
                             delAction={'Eliminar'}
                             urlPath={urlPath}>
 
